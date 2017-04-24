@@ -60,7 +60,7 @@ def train(mnist):
             _, loss_value, step = sess.run([train_op, loss, global_step], feed_dict={x: reshaped_xs, y_: ys})
 
             if i % 1000 == 0:
-                print("After %d train step(s), loss on training batch is %g." % (step, loss_value))
+                print("After %d train step(s), loss on training batch is %.2f%%." % (step, loss_value))
 
 
 # 主程序入口
